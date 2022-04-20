@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+a {
+  @apply text-[#42527F];
+}
+
+button {
+  @apply py-1.5 px-4 bg-[#42527F] text-white uppercase;
+  border-radius: 0.25rem;
+}
