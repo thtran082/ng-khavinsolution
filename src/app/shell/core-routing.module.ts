@@ -14,7 +14,7 @@ const routes: Routes = [
       {
         path: 'error',
         loadChildren: () =>
-          import('../error/core/main.module').then(
+          import('../error/shell/core/main.module').then(
             (m) => m.ErrorCoreMainModule
           ),
       },
