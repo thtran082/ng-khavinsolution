@@ -8,7 +8,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'error',
+        redirectTo: '/error',
         pathMatch: 'full',
       },
       {

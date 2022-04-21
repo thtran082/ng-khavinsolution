@@ -1,13 +1,20 @@
 .wrapper__footer {
   @apply my-8 flex flex-col justify-center items-center;
   &__verbal-brand {
+    @apply pb-4 sm:pb-0;
+  }
+  &__wave {
+    @apply hidden sm:block;
   }
   &__extra-info {
     @apply bg-[#42527F] w-screen pb-8;
     &__container {
-      @apply sm:w-[1200px] mx-auto flex flex-row justify-between gap-18;
+      @apply sm:w-[1200px] mx-auto flex flex-row justify-between gap-18 relative;
+      &__bg {
+        @apply sm:hidden absolute top-0 w-full opacity-20;
+      }
       &__left {
-        @apply flex flex-col justify-center items-end w-1/3;
+        @apply flex flex-col justify-center sm:items-end w-full sm:w-1/3 p-3 sm:p-0;
         color: white !important;
         a {
           @apply text-lg my-1 text-inherit;
@@ -22,6 +29,12 @@
           &.copyright {
             @apply text-sm;
           }
+        }
+      }
+      &__right {
+        @apply hidden sm:block;
+        & img {
+          @apply pt-12;
         }
       }
     }

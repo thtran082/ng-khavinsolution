@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   {
-    path: '**',
+    path: '',
     loadChildren: () => import('./shell/core.module').then((m) => m.CoreModule),
   },
 ];

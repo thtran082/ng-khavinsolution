@@ -19,6 +19,6 @@ import { WaveBorderComponent } from './core/components/wave-border/wave-border.c
     CoreRoutingModule,
     RouterModule,
   ],
-  exports: [],
+  exports: [LayoutComponent],
 })
 export class CoreModule {}
