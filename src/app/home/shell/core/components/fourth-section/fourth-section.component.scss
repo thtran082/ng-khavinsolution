@@ -1,0 +1,53 @@
+.wrapper__home__container__fourth-section {
+  @apply py-25 text-[#42527F] flex flex-col gap-2.5 justify-center items-center relative px-4 sm:px-0;
+  &__subtitle {
+    @apply font-lato text-xs sm:text-sm leading-8 uppercase font-normal;
+  }
+  &__title {
+    @apply font-fira_sans font-normal capitalize text-2xl sm:text-5xl leading-[1.8rem] sm:leading-[3.5rem]
+  }
+  &__description {
+    @apply text-center sm:w-1/2 w-full;
+  }
+  &__link__container {
+    @apply flex flex-col-reverse sm:flex-row sm:justify-evenly w-full pt-16 sm:pt-25 pb-25;
+    &__left {
+      @apply flex flex-col justify-center;
+      flex: 1 1 30%;
+      &__block {
+        @apply whitespace-nowrap flex flex-row sm:flex-col gap-2 justify-between sm:justify-start items-end font-fira_code font-light text-base sm:text-2xl leading-[1.875rem] sm:leading-[3.5rem] w-full sm:w-auto;
+        & .emphasis {
+          @apply border-b-2 border-solid border-[#040404];
+        }
+      }
+      &__more {
+        @apply flex flex-row justify-center items-center sm:hidden pt-9;
+      }
+    }
+    &__right {
+      @apply flex justify-center;
+      flex: 1 1 30%;
+    }
+  }
+  &__brands__container {
+    @apply flex flex-wrap justify-between items-center gap-10 pt-7.5;
+  }
+  &__overlay {
+    @apply absolute top-0 w-screen h-full bg-white overflow-hidden -z-10 left-0;
+    background-image: url(/assets/images/png/pngwing.png);
+  }
+}
+
+@media (min-width: 640px) {
+  .wrapper__home__container__fourth-section {
+    &__overlay {
+      left: calc((1200px - 100vw) / 2);
+    }
+    &__link__container__left {
+      flex: 1 1 30%;
+    }
+    &__right__container {
+      flex: 1 1 30%;
+    }
+  }
+}

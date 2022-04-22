@@ -17,15 +17,13 @@
         @apply flex flex-col justify-center sm:items-end w-full sm:w-1/3 p-3 sm:p-0;
         color: white !important;
         a {
-          @apply text-lg my-1 text-inherit;
-          line-height: 3rem;
+          @apply font-fira_code font-normal text-sm sm:text-lg text-inherit my-1 leading-[1.875rem] sm:leading-[3rem];
         }
         h6 {
-          @apply text-2xl;
-          line-height: 3rem;
+          @apply sm:text-2xl text-lg font-fira_code font-bold leading-[3rem];
         }
         span {
-          line-height: 1.875rem;
+          @apply leading-[1.875rem] font-normal text-sm sm:text-base;
           &.copyright {
             @apply text-sm;
           }

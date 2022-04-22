@@ -1,0 +1,19 @@
+.wrapper__home__container__fifth-section {
+  @apply relative pt-6 pb-25 flex flex-row justify-between items-center text-[#42527F];
+  &__container {
+    @apply w-1/2-screen mx-auto flex flex-col gap-3.25;
+    &__title {
+      @apply capitalize text-5xl leading-[3.5rem] font-normal font-fira_sans;
+    }
+    &__description {
+      @apply font-fira_mono text-base leading-[1.875rem] font-normal;
+    }
+    &__form {
+      @apply pt-10.5;
+    }
+  }
+  &__overlay {
+    @apply absolute top-0 w-screen h-full bg-[#ECEEF1] overflow-hidden -z-10;
+    left: calc((1200px - 100vw) / 2);
+  }
+}

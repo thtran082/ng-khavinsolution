@@ -2,11 +2,26 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+// custom fonts
+@import "./app/shared/resources/custom/fonts";
+
 a {
   @apply text-[#42527F];
 }
 
 button {
-  @apply py-1.5 px-4 bg-[#42527F] text-white uppercase;
+  @apply py-1.5 px-4 bg-[#42527F] text-white uppercase font-fira_sans text-sm font-medium;
   border-radius: 0.25rem;
+  &.outlined {
+    @apply text-[#42527F] bg-white border border-solid border-[#42527F];
+    &:hover {
+      @apply bg-[#42527F] text-white;
+    }
+  }
+  &.secondary {
+    @apply text-white bg-[#040404];
+  }
+}
+.active-link {
+  color: #0c0f17 !important;
 }

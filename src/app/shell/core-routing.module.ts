@@ -8,11 +8,18 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/error',
+        redirectTo: '/home',
         pathMatch: 'full',
       },
       {
-        path: 'error',
+        path: 'home',
+        loadChildren: () =>
+          import('../home/shell/core/main.module').then(
+            (m) => m.HomeCoreMainModule
+          ),
+      },
+      {
+        path: '**',
         loadChildren: () =>
           import('../error/shell/core/main.module').then(
             (m) => m.ErrorCoreMainModule

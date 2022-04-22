@@ -1,0 +1,38 @@
+.wrapper__home__container__third-section {
+  @apply relative py-14 flex flex-col sm:flex-row justify-between items-center px-4 sm:px-0;
+  &__left {
+    @apply flex flex-col max-w-140;
+    &__text {
+      &--sm {
+        @apply uppercase font-lato font-normal text-xs leading-8;
+      }
+      &--md {
+        @apply capitalize font-fira_sans font-normal text-2xl sm:text-5xl leading-[1.8rem] sm:leading-[3.5rem] text-[#42527F];
+      }
+      &__paragraph {
+        @apply pt-3 font-fira_mono text-sm sm:text-base font-normal leading-[1.875rem] text-[#525F85];
+      }
+    }
+  }
+  &__right {
+    @apply w-full sm:w-140 flex flex-row justify-between items-center flex-wrap gap-14 sm:gap-4 self-stretch pt-6.75 sm:pt-0;
+    &__container {
+      @apply self-stretch flex flex-row justify-center items-center;
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  &__overlay {
+    @apply absolute top-0 w-screen h-full bg-[#ECEEF1] overflow-hidden -z-10 left-0;
+  }
+}
+
+@media (min-width: 640px) {
+  .wrapper__home__container__third-section {
+    &__overlay {
+      left: calc((1200px - 100vw) / 2);
+    }
+    &__right__container {
+      flex: 1 1 30%;
+    }
+  }
+}

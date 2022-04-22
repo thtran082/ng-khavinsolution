@@ -1,0 +1,30 @@
+.wrapper__home__container__second-section {
+  @apply flex flex-col sm:flex-row justify-between items-center gap-11 sm:gap-8 pb-25 px-4 sm:px-0;
+  &__right {
+    @apply flex-1 text-[#42527F] max-w-140;
+    & .heading {
+      @apply font-raleway_dots text-[2.125rem] sm:text-7xl leading-[3.5rem];
+    }
+    & .subheading {
+      @apply font-fira_sans text-2xl sm:text-5xl leading-[1.8rem] sm:leading-[3.5rem] pt-0 sm:pt-7 pb-3.5 capitalize;
+    }
+    & .description {
+      @apply font-fira_mono font-normal text-sm sm:text-base leading-[1.875rem];
+    }
+    &__infos {
+      @apply flex flex-row gap-5 pt-8.75 sm:pt-11 items-center;
+      &__item {
+        @apply flex flex-col justify-between items-center gap-3;
+        & .index {
+          @apply font-lato text-[2rem] leading-10;
+        }
+        & .title {
+          @apply font-fira_code text-base leading-7;
+        }
+      }
+      & .divider {
+        @apply w-0.5 h-14 border border-solid border-[#C4C4C4];
+      }
+    }
+  }
+}
