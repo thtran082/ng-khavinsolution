@@ -1,3 +1,15 @@
 .wrapper__form__container {
-  
+  @apply flex flex-col justify-between items-stretch gap-4.25;
+  &__row {
+    @apply flex flex-row justify-between items-center gap-11;
+    & input {
+      @apply w-full;
+    }
+    &__field {
+      @apply w-full;
+    }
+  }
+  &__buttons {
+    @apply flex justify-end items-center;
+  }
 }

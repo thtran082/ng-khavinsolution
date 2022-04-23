@@ -1,0 +1,56 @@
+
+.wrapper__form__field {
+    @apply h-14 relative w-full mb-4;
+    &__label {
+      @apply absolute top-2.5 left-0 font-fira_mono font-normal text-base capitalize;
+      transition: 0.25s ease;
+    }
+    &__icon {
+      @apply h-5 w-6.5 absolute top-2.5 right-0 bg-no-repeat;
+      background-image: url(/assets/images/svg/input_valid.svg);
+    }
+    &__input {
+      @apply bg-transparent leading-[3.125rem] border-b border-solid border-[#5EBB9F] outline-none;
+      &[required] {
+        & ~ .wrapper__form__field__label::after {
+          @apply pl-1;
+          content: "*";
+        }
+      }
+      &::placeholder {
+        @apply opacity-0;
+        transition: 0.25s ease;
+      }
+      &:focus {
+        @apply border-[#5EBB9F];
+        &::placeholder {
+          @apply opacity-100;
+        }
+        & ~ .wrapper__form__field__label {
+          @apply -top-1 text-xs;
+        }
+      }
+      &:not(:placeholder-shown) {
+        & ~ .wrapper__form__field__label {
+          @apply -top-1 text-xs;
+        }
+      }
+      &:invalid {
+        @apply border-[#DB0000];
+        & ~ .wrapper__form__field__icon {
+          background-image: url(/assets/images/svg/input_invalid.svg);
+        }
+      }
+      &:valid {
+        & ~ .wrapper__form__field__icon {
+          background-image: url(/assets/images/svg/input_valid.svg);
+        }
+        & ~.wrapper__form__field__error {
+          @apply hidden;
+        }
+      }
+    }
+    &__error {
+      @apply text-[#6F6F6F] font-lato text-xs leading-4 pl-4;
+    }
+  }

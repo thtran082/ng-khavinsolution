@@ -8,6 +8,7 @@ import { HomeCoreThirdSectionComponent } from './components/third-section/third-
 import { HomeCoreFourthSectionComponent } from './components/fourth-section/fourth-section.component';
 import { HomeCoreFifthSectionComponent } from './components/fifth-section/fifth-section.component';
 import { HomeCoreConnectFormComponent } from './components/connect-form/connect-form.component';
+import { InputFormFieldComponent } from './components/input-form-field/input-form-field.component';
 
 @NgModule({
   imports: [CommonModule, HomeCoreMainRoutingModule],
@@ -19,7 +20,8 @@ import { HomeCoreConnectFormComponent } from './components/connect-form/connect-
     HomeCoreThirdSectionComponent,
     HomeCoreFourthSectionComponent,
     HomeCoreFifthSectionComponent,
-    HomeCoreConnectFormComponent
+    HomeCoreConnectFormComponent,
+    InputFormFieldComponent
   ],
 })
 export class HomeCoreMainModule {}
