@@ -17,12 +17,7 @@ import { FormsModule } from '@angular/forms';
     WaveBorderComponent,
     DrawerMenuComponent,
   ],
-  imports: [
-    CommonModule,
-    CoreRoutingModule,
-    RouterModule,
-    FormsModule
-  ],
-  exports: [LayoutComponent],
+  imports: [CommonModule, CoreRoutingModule, RouterModule, FormsModule],
+  exports: [CommonModule, LayoutComponent],
 })
 export class CoreModule {}

@@ -12,15 +12,9 @@ export class DrawerMenuComponent implements AfterViewInit {
 
   constructor() {}
 
-  ngAfterViewInit(): void {
-    // this.overlay.nativeElement.addEventListener('wheel', function (e) {
-    //   e.preventDefault();
-    //   e.stopPropagation();
-    // });
-  }
-  public onClick(): void {
-    console.log('ahihi', this.isOpenedMenu);
-  }
+  public ngAfterViewInit(): void {}
+
+  public onClick(): void {}
 
   public onOverlayClick(e: any): void {
     e.preventDefault();

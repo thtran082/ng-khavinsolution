@@ -1,0 +1,24 @@
+.wrapper__contact-us__third__section {
+  @apply text-[#42527F] pb-9 sm:pb-22 flex flex-col;
+  & .heading {
+    @apply font-raleway_dots text-[2.125rem] sm:text-7xl leading-[3.5rem] uppercase pb-8;
+  }
+  & .subheading {
+    @apply font-fira_sans text-2xl sm:text-5xl leading-[1.8rem] sm:leading-[3.5rem] pb-3.5 capitalize w-[70%];
+  }
+  & .description {
+    @apply font-fira_mono font-normal text-sm sm:text-base leading-[1.875rem];
+  }
+  &__image {
+    @apply w-full pb-8;
+    & img {
+      @apply w-full;
+    }
+  }
+  &__buttons {
+    @apply flex flex-row justify-center items-center pt-14 sm:hidden;
+    & button {
+      @apply w-29.75;
+    }
+  }
+}

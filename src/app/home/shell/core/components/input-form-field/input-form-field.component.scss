@@ -10,7 +10,7 @@
       background-image: url(/assets/images/svg/input_valid.svg);
     }
     &__input {
-      @apply bg-transparent leading-[3.125rem] border-b border-solid border-[#5EBB9F] outline-none;
+      @apply bg-transparent leading-[3.125rem] border-b border-solid border-[#5EBB9F] outline-none w-full;
       &[required] {
         & ~ .wrapper__form__field__label::after {
           @apply pl-1;

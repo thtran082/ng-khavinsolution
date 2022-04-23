@@ -1,0 +1,12 @@
+.wrapper__contact-us__first__section {
+  @apply text-[#42527F] pb-25 sm:pb-6.5;
+  & .heading {
+    @apply font-raleway_dots text-[2.125rem] sm:text-7xl leading-[3.5rem];
+  }
+  & .subheading {
+    @apply font-fira_sans text-2xl sm:text-5xl leading-[1.8rem] sm:leading-[3.5rem] pt-0 sm:pt-7 pb-3.5 capitalize sm:w-[70%];
+  }
+  & .description {
+    @apply font-fira_mono font-normal text-sm sm:text-base leading-[1.875rem] sm:w-[80%];
+  }
+}

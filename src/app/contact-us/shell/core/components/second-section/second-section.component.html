@@ -1,0 +1,12 @@
+<div class="wrapper__contact-us__second__section">
+  <div class="heading">engineers</div>
+  <div class="wrapper__contact-us__second__section__grid-system">
+    <ng-container *ngFor="let _ of [].constructor(12)">
+      <div
+        class="wrapper__contact-us__second__section__grid-system__item"
+        #item
+        [style.--var-height]="item.clientWidth + 'px'"
+      ></div>
+    </ng-container>
+  </div>
+</div>

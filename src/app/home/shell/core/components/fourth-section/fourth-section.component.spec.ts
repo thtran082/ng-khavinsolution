@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FourthSectionComponent } from './fourth-section.component';
+import { HomeCoreFourthSectionComponent } from './fourth-section.component';
 
-describe('FourthSectionComponent', () => {
-  let component: FourthSectionComponent;
-  let fixture: ComponentFixture<FourthSectionComponent>;
+describe('HomeCoreFourthSectionComponent', () => {
+  let component: HomeCoreFourthSectionComponent;
+  let fixture: ComponentFixture<HomeCoreFourthSectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FourthSectionComponent ]
+      declarations: [ HomeCoreFourthSectionComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FourthSectionComponent);
+    fixture = TestBed.createComponent(HomeCoreFourthSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

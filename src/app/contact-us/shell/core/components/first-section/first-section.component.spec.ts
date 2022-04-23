@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeCoreConnectFormComponent } from './connect-form.component';
+import { FirstSectionComponent } from './first-section.component';
 
-describe('HomeCoreConnectFormComponent', () => {
-  let component: HomeCoreConnectFormComponent;
-  let fixture: ComponentFixture<HomeCoreConnectFormComponent>;
+describe('FirstSectionComponent', () => {
+  let component: FirstSectionComponent;
+  let fixture: ComponentFixture<FirstSectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeCoreConnectFormComponent ]
+      declarations: [ FirstSectionComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeCoreConnectFormComponent);
+    fixture = TestBed.createComponent(FirstSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

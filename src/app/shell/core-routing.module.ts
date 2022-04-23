@@ -19,6 +19,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'contact-us',
+        loadChildren: () =>
+          import('../contact-us/shell/core/main.module').then(
+            (m) => m.ContactUsMainModule
+          ),
+      },
+      {
         path: '**',
         loadChildren: () =>
           import('../error/shell/core/main.module').then(

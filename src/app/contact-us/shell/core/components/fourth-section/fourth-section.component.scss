@@ -1,0 +1,26 @@
+.wrapper__contact-us__container__fifth-section {
+  @apply relative pt-6 pb-16 sm:pb-25 flex flex-row justify-between items-center text-[#42527F];
+  &__container {
+    @apply w-full sm:w-1/2-screen mx-auto flex flex-col gap-3.25 px-4 sm:px-0;
+    &__title {
+      @apply capitalize text-2xl sm:text-5xl leading-[1.8rem] sm:leading-[3.5rem] font-normal font-fira_sans;
+    }
+    &__description {
+      @apply font-fira_mono text-sm sm:text-base leading-[1.875rem] font-normal;
+    }
+    &__form {
+      @apply pt-10.5;
+    }
+  }
+  &__overlay {
+    @apply absolute top-0 w-screen h-full bg-[#ECEEF1] overflow-hidden -z-10 left-0;
+  }
+}
+
+@media (min-width: 640px) {
+  .wrapper__contact-us__container__fifth-section {
+    &__overlay {
+      left: calc((1200px - 100vw) / 2);
+    }
+  }
+}

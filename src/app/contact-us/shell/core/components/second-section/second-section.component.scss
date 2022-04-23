@@ -1,0 +1,25 @@
+$--var-height: 30px;
+
+.wrapper__contact-us__second__section {
+  @apply text-[#42527F] pb-25 sm:pb-6.5 flex flex-col gap-3.75 sm:gap-9.5;
+  & .heading {
+    @apply font-raleway_dots text-[2.125rem] sm:text-7xl leading-[3.5rem] uppercase;
+  }
+  &__grid-system {
+    @apply flex flex-wrap flex-row gap-3.75 sm:gap-9 justify-between items-center;
+    &__item {
+      flex: 1 1 45%;
+      @apply h-[var(--var-height)] bg-[#C4C4C4];
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .wrapper__contact-us__second__section {
+    &__grid-system {
+      &__item {
+        flex: 1 0 21%;
+      }
+    }
+  }
+}

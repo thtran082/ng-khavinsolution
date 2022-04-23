@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeCoreConnectFormComponent } from './connect-form.component';
+import { MainComponent } from './main.component';
 
-describe('HomeCoreConnectFormComponent', () => {
-  let component: HomeCoreConnectFormComponent;
-  let fixture: ComponentFixture<HomeCoreConnectFormComponent>;
+describe('MainComponent', () => {
+  let component: MainComponent;
+  let fixture: ComponentFixture<MainComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeCoreConnectFormComponent ]
+      declarations: [ MainComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeCoreConnectFormComponent);
+    fixture = TestBed.createComponent(MainComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
