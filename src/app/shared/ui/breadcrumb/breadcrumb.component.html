@@ -1,0 +1,6 @@
+<div class="wrapper__breadcrumb">
+  <a href="/">Home</a>
+  <a *ngFor="let item of breadcrumbArr" [href]="item">
+    {{ item }}
+  </a>
+</div>

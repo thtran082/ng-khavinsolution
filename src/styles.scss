@@ -7,6 +7,9 @@
 
 a {
   @apply text-[#42527F];
+  &:hover {
+    @apply text-[#2b3654];
+  }
 }
 
 button {

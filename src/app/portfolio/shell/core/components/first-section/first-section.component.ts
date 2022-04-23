@@ -30,7 +30,7 @@ export class PortfolioHomeFirstSectionComponent implements OnInit {
   }
 
   public onMoreClick(): void {
-    this.router.navigate(['/portfolio/1']);
+    this.router.navigate(['/portfolio/' + this.portfolioId]);
   }
 
 }

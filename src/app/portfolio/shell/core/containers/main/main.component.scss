@@ -1,4 +1,7 @@
 .wrapper__portfolio__container {
     @apply pt-7.5 sm:pt-18;
+    &__breadcrumb {
+      @apply block sm:pb-21 px-4 sm:px-0;
+    }
   }
   

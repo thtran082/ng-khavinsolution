@@ -1,10 +1,12 @@
 <div class="wrapper__portfolio__container">
+  <app-shared-breadcrumb class="wrapper__portfolio__container__breadcrumb"></app-shared-breadcrumb>
   <app-portfolio-core-first-section
     [title]="ContentConst.first.title"
     [subtitle]="ContentConst.first.subtitle"
     [description]="ContentConst.first.description"
     [image]="ContentConst.first.image"
     [reverseLayout]="true"
+    [portfolioId]="ContentConst.first.title"
   ></app-portfolio-core-first-section>
   <app-portfolio-core-first-section
     [title]="ContentConst.second.title"
@@ -13,6 +15,7 @@
     [image]="ContentConst.second.image"
     [reverseLayout]="false"
     [subIcon]="'/assets/images/png/varroc.png'"
+    [portfolioId]="ContentConst.second.title"
   ></app-portfolio-core-first-section>
   <app-portfolio-core-first-section
     [title]="ContentConst.third.title"
@@ -20,6 +23,7 @@
     [description]="ContentConst.third.description"
     [image]="ContentConst.third.image"
     [reverseLayout]="true"
+    [portfolioId]="ContentConst.third.title"
   ></app-portfolio-core-first-section>
   <app-portfolio-core-second-section></app-portfolio-core-second-section>
   <app-shared-contact-form></app-shared-contact-form>

@@ -1,0 +1,8 @@
+.wrapper__breadcrumb {
+  & a {
+    @apply capitalize font-fira_mono font-normal text-lg leading-8 cursor-pointer;
+    &:not(:last-child)::after {
+      content: "\00a0>\00a0";
+    }
+  }
+}
