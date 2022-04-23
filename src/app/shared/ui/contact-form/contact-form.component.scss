@@ -1,4 +1,4 @@
-.wrapper__contact-us__container__fifth-section {
+.wrapper__contact-form {
   @apply relative pt-6 pb-16 sm:pb-25 flex flex-row justify-between items-center text-[#42527F];
   &__container {
     @apply w-full sm:w-1/2-screen mx-auto flex flex-col gap-3.25 px-4 sm:px-0;
@@ -8,8 +8,23 @@
     &__description {
       @apply font-fira_mono text-sm sm:text-base leading-[1.875rem] font-normal;
     }
-    &__form {
+    &__main {
       @apply pt-10.5;
+      &__container {
+        @apply flex flex-col justify-between items-stretch gap-4.25;
+        &__row {
+          @apply flex flex-col sm:flex-row justify-between items-center gap-4.25 sm:gap-11;
+          & input {
+            @apply w-full;
+          }
+          &__field {
+            @apply w-full;
+          }
+        }
+        &__buttons {
+          @apply flex justify-end items-center;
+        }
+      }
     }
   }
   &__overlay {
@@ -18,7 +33,7 @@
 }
 
 @media (min-width: 640px) {
-  .wrapper__contact-us__container__fifth-section {
+  .wrapper__contact-form {
     &__overlay {
       left: calc((1200px - 100vw) / 2);
     }

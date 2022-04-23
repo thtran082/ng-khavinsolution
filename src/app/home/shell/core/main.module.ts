@@ -6,12 +6,10 @@ import { HomeCoreFirstSectionComponent } from './components/first-section/first-
 import { HomeCoreSecondSectionComponent } from './components/second-section/second-section.component';
 import { HomeCoreThirdSectionComponent } from './components/third-section/third-section.component';
 import { HomeCoreFourthSectionComponent } from './components/fourth-section/fourth-section.component';
-import { HomeCoreFifthSectionComponent } from './components/fifth-section/fifth-section.component';
-import { HomeCoreConnectFormComponent } from './components/connect-form/connect-form.component';
-import { InputFormFieldComponent } from './components/input-form-field/input-form-field.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
-  imports: [CommonModule, HomeCoreMainRoutingModule],
+  imports: [CommonModule, HomeCoreMainRoutingModule, SharedModule],
   exports: [],
   declarations: [
     HomeCoreMainComponent,
@@ -19,9 +17,6 @@ import { InputFormFieldComponent } from './components/input-form-field/input-for
     HomeCoreSecondSectionComponent,
     HomeCoreThirdSectionComponent,
     HomeCoreFourthSectionComponent,
-    HomeCoreFifthSectionComponent,
-    HomeCoreConnectFormComponent,
-    InputFormFieldComponent
   ],
 })
 export class HomeCoreMainModule {}

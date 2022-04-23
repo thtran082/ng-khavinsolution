@@ -1,11 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: '[app-input-form-field]',
+  selector: '[app-shared-input-form-field]',
   templateUrl: './input-form-field.component.html',
-  styleUrls: ['./input-form-field.component.scss']
+  styleUrls: ['./input-form-field.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class InputFormFieldComponent implements OnInit {
+export class SharedInputFormFieldComponent implements OnInit {
   @Input()
   public label?: string = '';
   @Input()

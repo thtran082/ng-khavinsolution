@@ -5,17 +5,16 @@ import { ContactUsCoreMainRoutingModule } from './main-routing.module';
 import { ContactUsCoreFirstSectionComponent } from './components/first-section/first-section.component';
 import { ContactUsCoreSecondSectionComponent } from './components/second-section/second-section.component';
 import { ContactUsCoreThirdSectionComponent } from './components/third-section/third-section.component';
-import { ContactUsCoreFourthSectionComponent } from './components/fourth-section/fourth-section.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
-  imports: [CommonModule, ContactUsCoreMainRoutingModule],
+  imports: [CommonModule, ContactUsCoreMainRoutingModule, SharedModule],
   exports: [],
   declarations: [
     ContactUsCoreMainComponent,
     ContactUsCoreFirstSectionComponent,
     ContactUsCoreSecondSectionComponent,
     ContactUsCoreThirdSectionComponent,
-    ContactUsCoreFourthSectionComponent,
   ],
 })
 export class ContactUsMainModule {}

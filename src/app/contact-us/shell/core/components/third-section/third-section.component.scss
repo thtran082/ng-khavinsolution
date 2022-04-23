@@ -1,5 +1,5 @@
 .wrapper__contact-us__third__section {
-  @apply text-[#42527F] pb-9 sm:pb-22 flex flex-col;
+  @apply text-[#42527F] pb-9 sm:pb-22 flex flex-col px-4 sm:px-0;
   & .heading {
     @apply font-raleway_dots text-[2.125rem] sm:text-7xl leading-[3.5rem] uppercase pb-8;
   }

@@ -1,7 +1,7 @@
 $--var-height: 30px;
 
 .wrapper__contact-us__second__section {
-  @apply text-[#42527F] pb-25 sm:pb-6.5 flex flex-col gap-3.75 sm:gap-9.5;
+  @apply text-[#42527F] pb-25 sm:pb-6.5 flex flex-col gap-3.75 sm:gap-9.5  px-4 sm:px-0;
   & .heading {
     @apply font-raleway_dots text-[2.125rem] sm:text-7xl leading-[3.5rem] uppercase;
   }

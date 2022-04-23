@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeCoreConnectFormComponent } from './connect-form.component';
+import { ContactFormComponent } from './contact-form.component';
 
-describe('HomeCoreConnectFormComponent', () => {
-  let component: HomeCoreConnectFormComponent;
-  let fixture: ComponentFixture<HomeCoreConnectFormComponent>;
+describe('ContactFormComponent', () => {
+  let component: ContactFormComponent;
+  let fixture: ComponentFixture<ContactFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeCoreConnectFormComponent ]
+      declarations: [ ContactFormComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeCoreConnectFormComponent);
+    fixture = TestBed.createComponent(ContactFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
