@@ -1,0 +1,18 @@
+.wrapper__portfolio__second-section {
+  @apply text-[#42527F] pb-16 sm:pb-25;
+  & .heading {
+    @apply font-raleway_dots text-[2.125rem] sm:text-7xl leading-[3.5rem] capitalize;
+  }
+  & .subheading {
+    @apply font-fira_sans text-2xl sm:text-5xl leading-[1.8rem] sm:leading-[3.5rem] pt-0 sm:pt-7 pb-3.5 uppercase;
+  }
+  & .description {
+    @apply font-fira_mono font-normal text-sm sm:text-base leading-[1.875rem] sm:leading-[1.875rem];
+  }
+  & .buttons {
+    @apply flex flex-row justify-between pt-7;
+    & button {
+      @apply min-w-36;
+    }
+  }
+}

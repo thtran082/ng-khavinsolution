@@ -23,7 +23,7 @@ const contents = {
 };
 
 @Component({
-  selector: 'app-main',
+  selector: 'app-contact-us-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
   encapsulation: ViewEncapsulation.None,

@@ -1,0 +1,30 @@
+.wrapper__portfolio__container__first-section {
+  @apply flex justify-between items-center gap-11 sm:gap-8 pb-25 px-4 sm:px-0;
+  &__left {
+    @apply flex-1 text-[#42527F];
+    & .heading {
+      @apply font-raleway_dots text-[2.125rem] sm:text-7xl leading-[3.5rem];
+    }
+    & .subheading {
+      @apply font-fira_sans text-2xl sm:text-5xl leading-[1.8rem] sm:leading-[3.5rem] pt-0 sm:pt-7 pb-3.5 capitalize;
+    }
+    & .subIcon {
+      @apply w-26 inline;
+    }
+    & .description {
+      @apply font-fira_mono font-normal text-sm sm:text-base leading-[1.875rem];
+    }
+    & .buttons {
+      @apply flex flex-row justify-between pt-11;
+      & button {
+        @apply min-w-36;
+      }
+    }
+  }
+  &__right {
+    @apply flex-1;
+    & img {
+      @apply w-full;
+    }
+  }
+}

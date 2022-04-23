@@ -1,7 +1,10 @@
 .wrapper__footer {
-  @apply my-8 flex flex-col justify-center items-center;
+  @apply mt-8 flex flex-col justify-center items-center;
   &__verbal-brand {
-    @apply pb-4 sm:pb-0;
+    @apply pb-4 sm:pb-0 w-full;
+    & img {
+      @apply w-full;
+    }
   }
   &__wave {
     @apply hidden sm:block;

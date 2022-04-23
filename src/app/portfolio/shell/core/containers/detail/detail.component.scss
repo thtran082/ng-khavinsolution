@@ -1,0 +1,15 @@
+.wrapper__portfolio__detail {
+  @apply flex flex-col justify-start items-start gap-3 pb-25 px-4 sm:px-0 pt-7.5 sm:pt-18 text-[#42527F];
+  & .heading {
+    @apply font-raleway_dots text-[2.125rem] sm:text-7xl leading-[3.5rem];
+  }
+  & .subheading {
+    @apply font-fira_sans text-2xl sm:text-5xl leading-[1.8rem] sm:leading-[3.5rem] capitalize;
+  }
+  & .description {
+    @apply font-fira_mono font-normal text-sm sm:text-base leading-[1.875rem];
+  }
+  &__image {
+    @apply w-full h-80 bg-[#C4C4C4] my-3;
+  }
+}

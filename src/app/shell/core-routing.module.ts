@@ -26,6 +26,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'portfolio',
+        loadChildren: () =>
+          import('../portfolio/shell/core/main.module').then(
+            (m) => m.PortfolioMainModule
+          ),
+      },
+      {
         path: '**',
         loadChildren: () =>
           import('../error/shell/core/main.module').then(
