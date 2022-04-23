@@ -1,5 +1,11 @@
 .wrapper__portfolio__second-section {
-  @apply text-[#42527F] pb-16 sm:pb-25;
+  @apply text-[#42527F] pb-16 sm:pb-25 px-4 sm:px-0;
+  &__images {
+    @apply flex flex-wrap justify-between gap-4 pt-2.25 sm:pt-12 pb-8 sm:pb-12;
+    & img {
+      @apply max-w-full w-full;
+    }
+  }
   & .heading {
     @apply font-raleway_dots text-[2.125rem] sm:text-7xl leading-[3.5rem] capitalize;
   }
@@ -10,9 +16,17 @@
     @apply font-fira_mono font-normal text-sm sm:text-base leading-[1.875rem] sm:leading-[1.875rem];
   }
   & .buttons {
-    @apply flex flex-row justify-between pt-7;
+    @apply flex flex-row justify-center sm:justify-between pt-7;
     & button {
       @apply min-w-36;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .wrapper__portfolio__second-section__images {
+    & img {
+      max-width: calc((100% / 3) - (2rem / 3));
     }
   }
 }
