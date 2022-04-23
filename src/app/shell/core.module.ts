@@ -6,6 +6,8 @@ import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { WaveBorderComponent } from './core/components/wave-border/wave-border.component';
+import { DrawerMenuComponent } from './ui/drawer-menu/drawer-menu.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,11 +15,13 @@ import { WaveBorderComponent } from './core/components/wave-border/wave-border.c
     HeaderComponent,
     FooterComponent,
     WaveBorderComponent,
+    DrawerMenuComponent,
   ],
   imports: [
     CommonModule,
     CoreRoutingModule,
     RouterModule,
+    FormsModule
   ],
   exports: [LayoutComponent],
 })

@@ -41,7 +41,7 @@
     }
   }
   &__overlay {
-    @apply absolute top-0 w-screen h-full bg-white overflow-hidden -z-10 left-0;
+    @apply absolute top-0 w-screen h-full bg-white overflow-hidden -z-10 left-0  bg-center sm:bg-left-top bg-no-repeat bg-cover;
     background-image: url(/assets/images/png/pngwing.png);
   }
 }

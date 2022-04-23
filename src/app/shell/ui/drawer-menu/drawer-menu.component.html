@@ -1,0 +1,55 @@
+<div class="wrapper__drawer-menu">
+  <input type="checkbox" name="menu-toggle" class="wrapper__drawer-menu__input" [(ngModel)]="isOpenedMenu" (change)="onClick()" />
+  <label class="wrapper__drawer-menu__icon" for="menu-toggle">
+    <img src="/assets/images/svg/menu.svg" alt="" />
+  </label>
+  <div
+    class="wrapper__drawer-menu__container"
+    [ngClass]="{
+      'translate-x-0': isOpenedMenu,
+      '-translate-x-[200vw]': !isOpenedMenu
+    }"
+  >
+    <div class="wrapper__drawer-menu__container__header">
+      <a href="/" class="wrapper__header__container__logo">
+        <img src="/assets/images/svg/logo.svg" alt="khavinsolution" />
+      </a>
+    </div>
+    <nav class="wrapper__drawer-menu__container__nav">
+      <a
+        class="wrapper__drawer-menu__container__nav__link"
+        routerLink="/home"
+        routerLinkActive="active-link"
+        (click)="isOpenedMenu = false"
+        ><span>home</span></a
+      >
+      <a
+        class="wrapper__drawer-menu__container__nav__link"
+        routerLink="/about-us"
+        routerLinkActive="active-link"
+        (click)="isOpenedMenu = false"
+        ><span>about us</span></a
+      >
+      <a
+        class="wrapper__drawer-menu__container__nav__link"
+        routerLink="/portfolio"
+        routerLinkActive="active-link"
+        (click)="isOpenedMenu = false"
+        ><span>portfolio</span></a
+      >
+      <a
+        class="wrapper__drawer-menu__container__nav__link"
+        routerLink="/contact-us"
+        routerLinkActive="active-link"
+        (click)="isOpenedMenu = false"
+        ><span>contact</span></a
+      >
+    </nav>
+  </div>
+
+  <div
+    class="wrapper__drawer-menu__overlay"
+    [ngClass]="{ block: isOpenedMenu, hidden: !isOpenedMenu }"
+    (click)="onOverlayClick($event)"
+  ></div>
+</div>

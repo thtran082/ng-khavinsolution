@@ -1,13 +1,8 @@
 <header>
   <div class="wrapper__header">
     <div class="wrapper__header__container">
-      <div
-        class="wrapper__header__container__menu"
-        (click)="toggleMobileMenu()"
-      >
-        <img src="/assets/images/svg/menu.svg" alt="" />
-      </div>
-      <a href="/">
+      <app-drawer-menu class="absolute"></app-drawer-menu>
+      <a href="/" class="wrapper__header__container__logo">
         <img src="/assets/images/svg/logo.svg" alt="khavinsolution" />
       </a>
       <nav class="wrapper__header__container__nav">
@@ -25,7 +20,7 @@
         >
         <a
           class="wrapper__header__container__nav__link"
-          routerLink="/about-us"
+          routerLink="/portfolio"
           routerLinkActive="active-link"
           ><span>portfolio</span></a
         >

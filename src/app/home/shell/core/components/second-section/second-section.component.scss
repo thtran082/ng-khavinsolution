@@ -1,5 +1,8 @@
 .wrapper__home__container__second-section {
   @apply flex flex-col sm:flex-row justify-between items-center gap-11 sm:gap-8 pb-25 px-4 sm:px-0;
+  &__left {
+    @apply hidden sm:block;
+  }
   &__right {
     @apply flex-1 text-[#42527F] max-w-140;
     & .heading {

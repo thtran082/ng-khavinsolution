@@ -19,6 +19,7 @@
         a {
           @apply font-fira_code font-normal text-sm sm:text-lg text-inherit my-1 leading-[1.875rem] sm:leading-[3rem];
           &.logo {
+            @apply block sm:hidden;
             img {
               filter: invert(100%) brightness(2);
             }
