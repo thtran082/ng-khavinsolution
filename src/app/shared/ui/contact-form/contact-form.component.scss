@@ -1,5 +1,5 @@
 .wrapper__contact-form {
-  @apply relative pt-6 pb-16 sm:pb-25 flex flex-row justify-between items-center text-[#42527F];
+  @apply relative py-6 flex flex-row justify-between items-center text-[#42527F];
   &__container {
     @apply w-full sm:w-1/2-screen mx-auto flex flex-col gap-3.25 px-4 sm:px-0;
     &__title {

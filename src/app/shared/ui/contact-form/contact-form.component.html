@@ -8,7 +8,12 @@
       shaping tomorrow.
     </span>
     <div class="wrapper__contact-form__container__main">
-      <ng-container *ngIf="type === ContactFormTypeEnum.STANDARD; else stepper">
+      <div
+        [ngClass]="{
+          'hidden': true,
+          'sm:block': type === ContactFormTypeEnum.STANDARD
+        }"
+      >
         <form>
           <div class="wrapper__contact-form__container__main__container">
             <div class="wrapper__contact-form__container__main__container__row">
@@ -53,10 +58,10 @@
             </div>
           </div>
         </form>
-      </ng-container>
-      <ng-template #stepper>
+      </div>
+      <div class="block sm:hidden">
         <app-shared-contact-form-stepper></app-shared-contact-form-stepper>
-      </ng-template>
+      </div>
     </div>
   </div>
   <div class="wrapper__contact-form__overlay"></div>
