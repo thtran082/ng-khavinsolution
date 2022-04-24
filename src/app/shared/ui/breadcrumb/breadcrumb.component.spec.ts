@@ -1,20 +1,23 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterTestingModule } from '@angular/router/testing';
 
-import { BreadcrumbComponent } from './breadcrumb.component';
+import { SharedBreadcrumbComponent } from './breadcrumb.component';
 
-describe('BreadcrumbComponent', () => {
-  let component: BreadcrumbComponent;
-  let fixture: ComponentFixture<BreadcrumbComponent>;
+describe('SharedBreadcrumbComponent', () => {
+  let component: SharedBreadcrumbComponent;
+  let fixture: ComponentFixture<SharedBreadcrumbComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BreadcrumbComponent ]
+      declarations: [ SharedBreadcrumbComponent ],
+      imports: [BrowserAnimationsModule, RouterTestingModule]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BreadcrumbComponent);
+    fixture = TestBed.createComponent(SharedBreadcrumbComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

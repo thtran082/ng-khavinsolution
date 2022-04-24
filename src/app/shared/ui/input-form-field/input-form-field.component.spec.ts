@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InputFormFieldComponent } from './input-form-field.component';
+import { SharedInputFormFieldComponent } from './input-form-field.component';
 
-describe('InputFormFieldComponent', () => {
-  let component: InputFormFieldComponent;
-  let fixture: ComponentFixture<InputFormFieldComponent>;
+describe('SharedInputFormFieldComponent', () => {
+  let component: SharedInputFormFieldComponent;
+  let fixture: ComponentFixture<SharedInputFormFieldComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InputFormFieldComponent ]
+      declarations: [ SharedInputFormFieldComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InputFormFieldComponent);
+    fixture = TestBed.createComponent(SharedInputFormFieldComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

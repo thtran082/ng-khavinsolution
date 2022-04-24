@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactFormStepperComponent } from './contact-form-stepper.component';
+import { SharedContactFormStepperComponent } from './contact-form-stepper.component';
 
-describe('ContactFormStepperComponent', () => {
-  let component: ContactFormStepperComponent;
-  let fixture: ComponentFixture<ContactFormStepperComponent>;
+describe('SharedContactFormStepperComponent', () => {
+  let component: SharedContactFormStepperComponent;
+  let fixture: ComponentFixture<SharedContactFormStepperComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactFormStepperComponent ]
+      declarations: [ SharedContactFormStepperComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContactFormStepperComponent);
+    fixture = TestBed.createComponent(SharedContactFormStepperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

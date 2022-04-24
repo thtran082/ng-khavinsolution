@@ -1,20 +1,23 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterTestingModule } from '@angular/router/testing';
 
-import { FirstSectionComponent } from './first-section.component';
+import { PortfolioHomeFirstSectionComponent } from './first-section.component';
 
-describe('FirstSectionComponent', () => {
-  let component: FirstSectionComponent;
-  let fixture: ComponentFixture<FirstSectionComponent>;
+describe('PortfolioHomeFirstSectionComponent', () => {
+  let component: PortfolioHomeFirstSectionComponent;
+  let fixture: ComponentFixture<PortfolioHomeFirstSectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FirstSectionComponent ]
+      declarations: [ PortfolioHomeFirstSectionComponent ],
+      imports: [BrowserAnimationsModule, RouterTestingModule]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FirstSectionComponent);
+    fixture = TestBed.createComponent(PortfolioHomeFirstSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

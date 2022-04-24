@@ -1,20 +1,23 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterTestingModule } from '@angular/router/testing';
 
-import { DetailComponent } from './detail.component';
+import { PortfolioCoreDetailComponent } from './detail.component';
 
-describe('DetailComponent', () => {
-  let component: DetailComponent;
-  let fixture: ComponentFixture<DetailComponent>;
+describe('PortfolioCoreDetailComponent', () => {
+  let component: PortfolioCoreDetailComponent;
+  let fixture: ComponentFixture<PortfolioCoreDetailComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DetailComponent ]
+      declarations: [ PortfolioCoreDetailComponent ],
+      imports: [BrowserAnimationsModule, RouterTestingModule]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DetailComponent);
+    fixture = TestBed.createComponent(PortfolioCoreDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
