@@ -4,6 +4,7 @@ import {
   OnInit,
   ViewEncapsulation,
 } from '@angular/core';
+import { ContactFormTypeEnum } from 'src/app/shared/data-access/constants/contact-form.enum';
 
 const contents = {
   thirdSection: {
@@ -31,6 +32,7 @@ const contents = {
 })
 export class ContactUsCoreMainComponent implements OnInit {
   public ContentsConst = contents;
+  public contactFormType: ContactFormTypeEnum = ContactFormTypeEnum.STEPPER;
 
   constructor() {}
 

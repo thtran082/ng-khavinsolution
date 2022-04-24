@@ -1,0 +1,35 @@
+.wrapper__contact-form__stepper {
+  @apply w-full;
+  &__container {
+    @apply flex flex-col justify-center items-start sm:items-center gap-8;
+    &__row {
+      @apply w-full flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-20;
+      & .controls {
+        @apply flex-1 flex flex-row flex-nowrap overflow-hidden;
+        transition: 1s ease;
+        &__item {
+          @apply min-w-full w-full flex flex-col sm:flex-row justify-between gap-11 items-center;
+          transition: 1s ease;
+        }
+      }
+      & .buttons {
+        @apply w-30 flex flex-col justify-center items-center gap-6;
+        & button {
+          @apply w-full;
+        }
+      }
+    }
+    &__index {
+      @apply hidden sm:block;
+    }
+  }
+  &__step-indexes {
+    @apply flex flex-row justify-center items-center gap-2.5;
+    &__item {
+      @apply w-2.5 h-2.5 border border-solid border-black rounded-full cursor-pointer;
+      &.emphasis {
+        @apply bg-black;
+      }
+    }
+  }
+}

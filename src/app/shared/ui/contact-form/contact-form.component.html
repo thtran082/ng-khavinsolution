@@ -8,50 +8,56 @@
       shaping tomorrow.
     </span>
     <div class="wrapper__contact-form__container__main">
-      <form>
-        <div class="wrapper__contact-form__container__main__container">
-          <div class="wrapper__contact-form__container__main__container__row">
+      <ng-container *ngIf="type === ContactFormTypeEnum.STANDARD; else stepper">
+        <form>
+          <div class="wrapper__contact-form__container__main__container">
+            <div class="wrapper__contact-form__container__main__container__row">
+              <div
+                class="w-full"
+                app-shared-input-form-field
+                label="First name"
+                placeholder="Fill your first name"
+                [required]="true"
+              ></div>
+              <div
+                class="w-full"
+                app-shared-input-form-field
+                label="Last name"
+                placeholder="Fill your last name"
+                [required]="true"
+              ></div>
+            </div>
+            <div class="wrapper__contact-form__container__main__container__row">
+              <div
+                class="w-full"
+                app-shared-input-form-field
+                label="Email"
+                placeholder="Fill your email"
+                type="email"
+              ></div>
+            </div>
+            <div class="wrapper__contact-form__container__main__container__row">
+              <div
+                class="w-full"
+                app-shared-input-form-field
+                label="Phone"
+                [required]="true"
+                placeholder="Fill your phone"
+                type="text"
+              ></div>
+            </div>
             <div
-              class="w-full"
-              app-shared-input-form-field
-              label="First name"
-              placeholder="Fill your first name"
-              [required]="true"
-            ></div>
-            <div
-              class="w-full"
-              app-shared-input-form-field
-              label="Last name"
-              placeholder="Fill your last name"
-              [required]="true"
-            ></div>
+              class="wrapper__contact-form__container__main__container__buttons"
+            >
+              <button class="secondary">submit</button>
+            </div>
           </div>
-          <div class="wrapper__contact-form__container__main__container__row">
-            <div
-              class="w-full"
-              app-shared-input-form-field
-              label="Email"
-              placeholder="Fill your email"
-              type="email"
-            ></div>
-          </div>
-          <div class="wrapper__contact-form__container__main__container__row">
-            <div
-              class="w-full"
-              app-shared-input-form-field
-              label="Phone"
-              [required]="true"
-              placeholder="Fill your phone"
-              type="text"
-            ></div>
-          </div>
-          <div class="wrapper__contact-form__container__main__container__buttons">
-            <button class="secondary">submit</button>
-          </div>
-        </div>
-      </form>
+        </form>
+      </ng-container>
+      <ng-template #stepper>
+        <app-shared-contact-form-stepper></app-shared-contact-form-stepper>
+      </ng-template>
     </div>
   </div>
   <div class="wrapper__contact-form__overlay"></div>
 </div>
-

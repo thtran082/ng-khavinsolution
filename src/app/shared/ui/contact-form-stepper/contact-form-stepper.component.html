@@ -1,0 +1,66 @@
+<div class="wrapper__contact-form__stepper">
+  <div class="wrapper__contact-form__stepper__container">
+    <div class="wrapper__contact-form__stepper__container__row">
+      <div class="controls" #controls>
+        <div class="controls__item">
+          <div
+            class="w-full"
+            app-shared-input-form-field
+            label="First name"
+            placeholder="Fill your first name"
+            [required]="true"
+          ></div>
+          <div
+            class="w-full"
+            app-shared-input-form-field
+            label="Last name"
+            placeholder="Fill your last name"
+            [required]="true"
+          ></div>
+        </div>
+        <div class="controls__item">
+          <div
+            class="w-full"
+            app-shared-input-form-field
+            label="Email"
+            placeholder="Fill your email"
+            type="email"
+          ></div>
+        </div>
+        <div class="controls__item">
+          <div
+            class="w-full"
+            app-shared-input-form-field
+            label="Phone"
+            [required]="true"
+            placeholder="Fill your phone"
+            type="text"
+          ></div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="block sm:hidden">
+          <ng-container *ngTemplateOutlet="stepIndexes"></ng-container>
+        </div>
+        <button class="secondary" (click)="onNextBtnClick()">
+          {{ currentStep < 2 ? "next" : "submit" }}
+        </button>
+      </div>
+    </div>
+    <div class="wrapper__contact-form__stepper__container__index">
+      <ng-container *ngTemplateOutlet="stepIndexes"></ng-container>
+    </div>
+  </div>
+</div>
+
+<ng-template #stepIndexes>
+  <div class="wrapper__contact-form__stepper__step-indexes">
+    <ng-container *ngFor="let item of [].constructor(3); index as index">
+      <div
+        class="wrapper__contact-form__stepper__step-indexes__item"
+        [class.emphasis]="index === currentStep"
+        (click)="onMoveStepClick(index)"
+      ></div>
+    </ng-container>
+  </div>
+</ng-template>
